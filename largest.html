@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Largest Number</title>
+    </head>
+    <body>
+        <script>
+            let first=prompt("Enter first Number");
+            let second=prompt("Enter second Number");
+            let third=prompt("Enter second number");
+
+            largest(first,second,third);
+
+            function largest(F,S,T)
+            {
+                if (F>S && F>T )
+                {
+                    alert(`Largest number is ${F}`);
+                }
+                else if (S>F && S>T)
+                {
+                    alert(`Largest number is ${S}`);
+                }
+                else
+                alert(`Largest number is ${T}`);
+            }
+
+        </script>
+    </body>
+</html>

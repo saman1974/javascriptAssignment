@@ -1,0 +1,38 @@
+*<html>
+    <head>
+        <title>Temperature Converter</title>
+    </head>
+    <body>
+        <script>
+            let unit = prompt("which unit do you prefer celcius(c)or fahrenheit(f)");
+            if (unit!="c" && unit!="f")
+            {
+                alert("Invalid Unit");
+            }
+            
+            
+                let value = prompt(`Enter your temperature in ${unit}`);
+                conversion(unit,value);
+            
+
+              function conversion(unit,value)
+                {
+                    let temp;
+                    if (unit=="c")
+                    {
+                      temp=(9*value/5)+32;
+                     alert(`The temperature is ${value}C ${temp}F`);
+                     }
+                  else if (unit=="f")
+                     {
+                     temp=5*(value-32)/9;
+                     alert(`The temperature is ${value}F ${temp}C`);
+                     }
+
+                 }
+            
+
+
+        </script>
+    </body>
+</html>
